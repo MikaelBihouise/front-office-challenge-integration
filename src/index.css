@@ -1,15 +1,61 @@
+html,
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
 }
 
 #root {
   height: 100%;
+  background-color: #f0f2f5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Roboto', monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 26px;
+  background-color: #d3d3d3;
+}
+
+.card-image {
+  width: 300px;
+  height: 174px;
+  object-fit: cover;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 15px !important;
+  color: rgb(29, 29, 29) !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '' !important;
+}
+
+.slick-disabled {
+  opacity: 25% !important;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+.card-component {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
